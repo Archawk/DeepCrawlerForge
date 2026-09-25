@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Getting started / game files
+    url: https://github.com/Archawk/DeepCrawlerForge/blob/main/docs/GETTING-STARTED.md
+    about: How to prepare your own game files. Game files cannot be provided here.

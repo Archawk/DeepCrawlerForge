@@ -1,0 +1,4 @@
+* text=auto eol=lf
+index.html linguist-generated=true -diff
+BUILD-INFO.json linguist-generated=true
+SHA256SUMS linguist-generated=true

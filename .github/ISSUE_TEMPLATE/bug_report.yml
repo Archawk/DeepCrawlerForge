@@ -1,0 +1,47 @@
+name: Bug report
+description: Something behaves differently from the original game, or does not work.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. **Do not attach game files, PAK archives, executables or saves containing game data.**
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: "`release` and `buildId` from BUILD-INFO.json (also shown in the page's <meta name=dcf-build>)."
+      placeholder: "Dev95RP-Candidate185 / H10-B2R79-Dev95RP-Candidate185"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options: [Authentic, Enhanced]
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and OS
+      placeholder: "Chrome 140 / Windows 11"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+      description: If you know what the original DOS game does in the same place, please say so.
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: Where in the game
+      description: Level, rough location, what the party was doing.
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline export (Enhanced)
+      description: Optional. Attach an exported timeline file so the moment can be replayed deterministically.

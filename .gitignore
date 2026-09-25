@@ -1,0 +1,19 @@
+# Guard: original game data must never be committed to this repository.
+*.[Pp][Aa][Kk]
+*.[Ee][Xx][Ee]
+*.[Oo][Vv][Ll]
+*.[Ff][Nn][Tt]
+*.[Ss][Aa][Vv]
+*.[Cc][Pp][Ss]
+*.[Cc][Mm][Pp]
+*.[Cc][Oo][Ll]
+*.[Mm][Aa][Zz]
+*.[Tt][Mm][Pp]
+*.[Vv][Mm][Pp]
+*.[Zz][Ii][Pp]
+eob*/
+EOB*/
+
+# Local clutter
+.DS_Store
+Thumbs.db

@@ -1,0 +1,49 @@
+{
+  "schema": "dcf-public-build-info-v1",
+  "status": "RELEASE",
+  "release": "Dev95RP-Candidate185",
+  "version": "0.185.0",
+  "releaseDate": "2026-09-25",
+  "buildId": "H10-B2R79-Dev95RP-Candidate185",
+  "edition": "public",
+  "profiles": [
+    "authentic",
+    "enhanced"
+  ],
+  "frontier": {
+    "policy": "include-frontier-level",
+    "certifiedLevels": [
+      1
+    ],
+    "frontierLevel": 2,
+    "maxPlayableLevel": 2,
+    "refusedMessage": "The way on is sealed in this preview.",
+    "refusedImportMessage": "That save is past this preview (max level {max}).",
+    "frontierLevelNotice": "Level {level} is still being certified."
+  },
+  "identity": {
+    "masterHtmlSha256": "0f5a668064d4f39adefc3fdeec6ff7f7e627774cb9128aa040f8097147571403",
+    "indexHtmlSha256": "0db4903cd061fabc3c3050ceeadf0600c38d767b3a4e63d747f99f16413538d0",
+    "transform": "legacy-anchored-v1"
+  },
+  "verification": {
+    "fullRegression": "413 tests: 382 pass, 0 fail, 31 skipped",
+    "mountedStartup": "28/28 PASS",
+    "publicSmoke": "PASS",
+    "cleanAudit": {
+      "status": "PASS",
+      "prohibitedPayloads": 0,
+      "exactHashCollisions": 0,
+      "verbatimSourceText": {
+        "accepted": 5,
+        "debt": 0
+      }
+    }
+  },
+  "packager": {
+    "revision": "dcf-public-repo-packager-v1",
+    "sha256": "0024f867daf9341b8bc81bd33386e781134f7c787ec1117d201cb06139bf1ac6",
+    "templateDigest": "5093958cc51aefa35ac473aabf076a552de9a2a974e0a5b249cd459d02148a52"
+  },
+  "gameDataIncluded": false
+}
