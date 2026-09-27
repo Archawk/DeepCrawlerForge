@@ -29,7 +29,7 @@ The practical rule for contributors and reviewers: no original byte, coordinate,
 
 - The 320×200 screen is composited from harvested chrome and graphics, then scaled with pixel-exact rendering. Fullscreen changes only the presentation layer and never the simulation.
 - The **intro and title sequences** run the original presentation logic in a restricted, presentation-only interpreter. This interpreter executes the mounted intro program's drawing and timing code, and its presentation clock is completely separate from the gameplay clock and RNG.
-- Sound and music are synthesized in the browser from the game's own driver and music data.
+- **Sound and music (AdLib).** The sound driver inside your game program (and inside the intro program for the intro) runs in the same restricted interpreter. Its register writes go to an OPL2 (AdLib chip) synthesizer written for DCF, so the music and effects are the original driver's own output. The interpreter only produces sound; it never touches the game world. PC speaker and Tandy sound use a simpler renderer.
 
 ## 4a. Studio intro
 
