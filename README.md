@@ -31,7 +31,11 @@ It includes **no game data**. Graphics, text, levels, fonts, sound and even the 
 | Turn-based mode (optional) | – | ✔ |
 | Timeline scrubber (rewind/branch) | – | ✔ |
 | Enemy hit points, Attack All, smart pickup, modern keyboard | – | ✔ (each optional) |
-| Restored content (Burning Hands scroll, restored ending) | – | ✔ (optional) |
+| Special quest tracker, exploration status | – | ✔ (each optional) |
+| Fixes for bugs of the original game (Authentic keeps the original) | – | ✔ (each optional) |
+| Restored content (unfinished spells, the Burning Hands scroll, restored ending) | – | ✔ (each optional) |
+| Extended content (options that build on the original design) | – | ✔ (each optional) |
+| Campaign runner: hand the game to it, take over at any moment | – | ✔ (optional) |
 
 Each Enhanced feature can be switched on or off separately. Authentic mode never shows modern overlays. See [docs/PLAYING.md](docs/PLAYING.md).
 

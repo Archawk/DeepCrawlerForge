@@ -2,6 +2,8 @@
 
 Public releases of DeepCrawlerForge. Each entry is written for players. The development release notes are more detailed and stay in the development workspace.
 
+0.205.0 is the first public release. The entries below it describe earlier development previews that were not published.
+
 <!-- Release sessions: add the new entry at the top. The heading MUST contain the development
      release id (e.g. Dev95RG-Candidate176); the packager refuses a final build otherwise. -->
 
