@@ -1,12 +1,12 @@
 # DeepCrawlerForge
 
-**A clean-room browser engine for the original 1991 *Eye of the Beholder* (DOS) game data. Bring your own game files.**
+**An independently written browser engine for the original 1991 *Eye of the Beholder* (DOS) game data. Bring your own game files.**
 
 DeepCrawlerForge is a single HTML file. Open it in a modern browser, give it a ZIP of your own *Eye of the Beholder* game folder, and play the original dungeon as a faithful **Authentic** recreation or with optional **Enhanced** quality-of-life features.
 
 It includes **no game data**. Graphics, text, levels, fonts, sound and even the screen layout are read from your files, in your browser, every time the game starts. Nothing is uploaded.
 
-> **Public preview 0.185.0** (`Dev95RP-Candidate185`, released 2026-09-25). You can play levels 1–2 (level 2 is the current certification frontier and is still being certified). The game stops you before any level that has not been checked yet. See [Certification status](#certification-status).
+> **Public preview 0.205.0** (`Dev95SH-Candidate205`, released 2026-10-04). You can play levels 1, 2, 3 (fully certified only). The game stops you before any level that has not been checked yet. See [Certification status](#certification-status).
 
 ---
 
@@ -41,12 +41,12 @@ DeepCrawlerForge is developed against the original game. During development, the
 
 | | This release |
 |---|---|
-| Fully certified levels | 1 |
-| Certification frontier | Level 2 (in progress) |
-| Playable in this public build | up to level 2 |
-| Engine regression suite | 413 tests: 382 pass, 0 fail, 31 skipped |
+| Fully certified levels | 1, 2, 3 |
+| Certification frontier | Level 4 (in progress) |
+| Playable in this public build | up to level 3 |
+| Engine regression suite | 624 tests: 499 pass, 0 fail, 125 skipped |
 | Mounted start-up self-test | 28/28 PASS |
-| Intro / DOS presentation parity | intro, main menu, setup program and character creation match DOS; Armor Class, monster record fields, monster timing and what is seen behind doors match the original; gameplay certified through level 1, level 2 in progress |
+| Intro / DOS presentation parity | intro, menus, setup and character creation match DOS; combat rules, turn undead, the presentation hold, the stairs manual check and the level maintenance schedule match the original; the certified campaign runs from the start to the Level 4 arrival |
 
 The playable range grows with each public release. [docs/CERTIFICATION.md](docs/CERTIFICATION.md) explains what "certified" means and how the frontier works.
 
@@ -68,7 +68,7 @@ docs/                 player and technical documentation
 CHANGELOG.md          public release history
 LICENSE               GNU GPL v3 (licence for the DeepCrawlerForge code)
 LICENSE-ADDITIONAL-TERMS.md   copyright notice + GPL §7 attribution terms
-NOTICE.md             trademarks, game data and clean-room statement
+NOTICE.md             trademarks, game data and provenance statement
 ```
 
 This repository contains **published releases only**. Development, certification tooling and evidence are kept in a separate workspace. See [docs/RELEASES.md](docs/RELEASES.md) for how a public build is produced from it.

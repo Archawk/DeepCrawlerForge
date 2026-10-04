@@ -5,6 +5,100 @@ Public releases of DeepCrawlerForge. Each entry is written for players. The deve
 <!-- Release sessions: add the new entry at the top. The heading MUST contain the development
      release id (e.g. Dev95RG-Candidate176); the packager refuses a final build otherwise. -->
 
+## 0.205.0 — Dev95SH-Candidate205 (preview)
+- Fights follow the original's rules more closely:
+  - arrows, thrown items and spells hit or miss as the original rolls them;
+  - multi-class characters no longer always hit;
+  - clerics and paladins holding a holy symbol turn undead automatically, as in the original;
+  - when a monster hits the party, the game pauses for a moment, as the original does (Enhanced has a bug fix that removes the pause; it is on by default).
+- The first time you take certain stairs down, the game asks for a word from the manual, as the original does. Enhanced can enter it for you (off by default).
+- Wandering monsters come back on the levels where the original brings them back, at the same moments.
+- When the whole party has fallen, the game is over, as in the original, with a button to rewind. Enhanced also ends the game when no one is left conscious (a bug fix, on by default).
+- The bug-fix choices are part of your game: a saved game or timeline plays back the same whatever your current settings.
+- Below the screen (Enhanced): which levels' special quests you have finished, and how much of each level you have explored.
+- The campaign runner:
+  - can be told to play to the start of a level (walking back to it if you are past it) or to the end of the game;
+  - stops at once when you take over;
+  - avoids fights it cannot win, puts on armour and shields it finds, and does not rest next to monsters.
+- The history menu lists the start of each level.
+- The Enhanced menu at the start shows every option's full description: long lists are split into pages, and a long text continues with Tab or a click. The DeepCrawlerForge title after the studio intro stays on screen a little longer.
+- The Enhanced menu has a new category, Extended content, for options that build on the original design. Its options (the cleric rests at story events; the drow patrol keeps the eggs it takes as a bribe, so they can be won back) and three new encounter bug fixes apply to the encounters of later levels (beyond this preview), which now follow the original more closely.
+- Because the fight rules changed, the certified timeline is rebuilt from the start of the game. This preview's certified timeline runs from Level 1, turn 0, to the Level 4 arrival (turn 6348) and replays exactly from its start. This preview plays through the end of Level 3.
+- The single simulation clock is unchanged.
+
+## 0.202.0 — Dev95SG-Candidate202 (preview)
+- Two things the original game does in the background every moment now happen here too:
+  - about every second and a half, every monster on the level gets a small random change to how it is drawn;
+  - on the first levels, distant dungeon sounds play near the party at random intervals.
+  Both use the game's dice, so every later roll now follows the original exactly. Every value is read from your copy of the game.
+- The campaign runner:
+  - casts protection and attack spells only when a fight is dangerous;
+  - shows the spellbook while it casts in live play;
+  - no longer falls back and forth through the Level-2 pits;
+  - tries levers when it is stuck;
+  - waits instead of stepping into its own arrow;
+  - stops pulling a lever back and forth while holding an item.
+  - no longer walks back and forth between a lever and a far corridor on Level 2, and finds its way out of the pit pocket there;
+  - waits for a monster to clear the way, or walks up and fights it, instead of giving up;
+  - finishes Level 2 instead of wandering it for thousands of turns: teleport squares no longer count as unexplored, it understands the elevator (press the button twice), and it no longer shuts itself in with door switches;
+  - puts arrows into the quiver, and no longer prints a burst of bogus "taken" messages;
+  - highlights the spell it is casting, and keeps its eye icon visible while the spellbook is open.
+- The restored-scroll options no longer tell where the scroll is hidden.
+  - It also plans about three times faster, so live play no longer slows down near the end of Level 1.
+- Because the dice now follow the original more closely, the certified timeline is rebuilt again from Level 2. This preview's certified timeline runs from Level 2, turn 1121, to turn 2121 and replays exactly from its start.
+- The single simulation clock is unchanged.
+
+## 0.201.0 — Dev95SF-Candidate201 (preview)
+- Monster timing now matches the original game to the tick, also while arrows and thrown items are in the air:
+  - a monster acts only once its moment has passed, not on it;
+  - a flying item checks for a hit again whenever a monster or the party moves;
+  - monsters and flying items take their turns in time order within each quarter second.
+- A monster turning on the spot now makes its footstep sound, as in the original. The rattle you hear at the start of a new game is the kobolds nearby: the sound is loud when they are close and fades as they walk away.
+- The campaign runner arms the back row with the party's bows and slings and shoots, opens doors deeper into a level, eats a ration when it still adds food, and leaves spare items next to stairs so they are easy to find again.
+- Because monster timing changed, the certified timeline is being rebuilt from Level 2. This preview's certified timeline runs from Level 2, turn 1121, to turn 1179 and replays exactly from its start.
+- The provenance notice now describes how the original program is used during development and at runtime.
+- The single simulation clock is unchanged.
+
+## 0.200.0 — Dev95SE-Candidate200 (preview)
+- The campaign runner goes down the Level-3 stairs and reaches Level 4.
+- Two details now match the original game:
+  - moving the party wakes monsters the way the original does, also after stairs and teleporters;
+  - a trap that places a monster finishes the rest of its work (on Level 4, walls change) in the same step.
+- The runner keeps its distance from monsters whose touch poisons or paralyses when it has something to shoot, will not rest while someone is poisoned and nothing can cure it, and leaves an item on the Level-1 pressure plate so the door stays open.
+- The engine no longer contains any byte pattern of the original program: everything it reads is found by decoding your copy of the game. The provenance notice is updated accordingly.
+- The certified timeline continues to Level 4, turn 6151, and replays exactly from its start.
+- The single simulation clock is unchanged.
+
+## 0.199.0 — Dev95SD-Candidate199 (preview)
+- The campaign runner goes down to Level 3 and completes its special quest. It places the four blue gems in the eye slots until the eyes turn purple, then takes all four back, and the level rewards the party.
+- Three details now match the original game:
+  - a level the party has never visited loads fresh from the game files, even when the save file holds an old copy of it;
+  - the monster clean-up on a level counts the party's steps, not time;
+  - a wall clicked with nothing on the mouse cursor sees an empty hand, not a character's weapon.
+- The certified timeline continues to Level 3, turn 5936, and replays exactly from its start.
+- The single simulation clock is unchanged.
+
+## 0.198.0 — Dev95SC-Candidate198 (preview)
+- Taking an item from a wall niche that has a script now runs that script, as in the original game.
+- On Level 2 the campaign runner uses all four dagger carvings and completes the level's special quest. It also clears a doorway held by two skeletons, and it puts away an item it does not need before pulling a lever.
+- The certified timeline continues to turn 3582. The stairs down to Level 3 are not reached yet.
+- The engine now reads the original program by decoded instructions instead of byte patterns. Every value it reads is unchanged.
+- The single simulation clock is unchanged.
+
+## 0.196.0 — Dev95SA-Candidate196 (preview)
+- The campaign runner now opens doors that take a moment to open, such as stuck doors that must be forced, and waits for them instead of giving up.
+- On Level 2 the runner forces four stuck doors, takes the Silver Key from its niche and opens the second lock, and places daggers in three of the four dagger carvings. The certified timeline continues to turn 2065.
+- Three details now match the original game:
+  - some stuck doors could not be clicked;
+  - spinners turned the party to a fixed direction instead of turning it relative to its facing;
+  - an arrow put into a non-empty quiver did not become the first one.
+- The single simulation clock is unchanged.
+
+## 0.195.0 — Dev95RZ-Candidate195 (preview)
+- Horizon stops at a certified Level-2 regional dead end instead of cycling through pits and resting without progress.
+- The certified timeline continues to turn 1553. The dagger-sensitive wall route remains under investigation.
+- Game rules and the single simulation clock are unchanged.
+
 ## 0.194.0 — Dev95RY-Candidate194 (preview)
 - The campaign runner's Level-2 key solution is now checked step by step against the original game running under emulation: the throw onto the pressure plate, the walk past the pit, and the key in the lock.
 - Saves exported from DeepCrawlerForge now keep the current level's changes when loaded in the original game. Opened doors and closed pits no longer revert.

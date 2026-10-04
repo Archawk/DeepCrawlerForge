@@ -18,9 +18,17 @@ Every published build is checked automatically before release (see [docs/RELEASE
 
 The summary for each build is in `BUILD-INFO.json` under `verification.cleanAudit`.
 
-## Clean-room statement
+## Provenance
 
-DeepCrawlerForge is an independent implementation. It does not contain code, tables or assets from ScummVM, from the original developers, or from any other re-implementation. The original DOS program is used **only during development**, as a black-box validator, and its observations are never copied into the program as values or mappings.
+DeepCrawlerForge is an independently rewritten EOB-compatible engine. It contains no copy of the original game program or its data files, and no code, tables or assets from ScummVM or from any other re-implementation.
+
+The original game program is never distributed with DeepCrawlerForge. During development it is used as the behavioral oracle and validator. At runtime, the player's own supplied game files—including the executable—are read locally as external input so DCF can discover source structures and behavior. No original game executable bytes are embedded in DeepCrawlerForge. The engine finds what it needs inside **your** files when it starts: graphics, text, levels, rules and the program's own tables are read from them, and the places in the program that hold them are located by decoding its instructions.
+
+The current technical provenance audit finds no known material third-party source expression, original game payloads, substantial executable fingerprints, original-program addresses, or authored Authentic source mappings in the distributed public code.
+
+This is a technical provenance assessment, not a formal legal clean-room certification.
+
+Every release runs a provenance audit over the exact public `index.html`: byte-pattern locators, addresses of the original program, identifiers removed earlier, and reviewed authored constants. The result is in `BUILD-INFO.json` under `verification.provenanceAudit`. Since Dev95SE Candidate200 the audit reports no open item (`claimReady: true`): code in your copy of the program is found by decoding its instructions, not by stored byte patterns; no address of the original program is embedded; and the engine's event names and interface record layout are read from your program rather than written into the engine. Every earlier finding is registered as removed, and a release in which one reappears fails the audit and is not published.
 
 ## Third-party components
 

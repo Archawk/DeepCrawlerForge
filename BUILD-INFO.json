@@ -1,33 +1,35 @@
 {
   "schema": "dcf-public-build-info-v1",
   "status": "RELEASE",
-  "release": "Dev95RP-Candidate185",
-  "version": "0.185.0",
-  "releaseDate": "2026-09-25",
-  "buildId": "H10-B2R79-Dev95RP-Candidate185",
+  "release": "Dev95SH-Candidate205",
+  "version": "0.205.0",
+  "releaseDate": "2026-10-04",
+  "buildId": "H10-B2R79-Dev95SH-Candidate205",
   "edition": "public",
   "profiles": [
     "authentic",
     "enhanced"
   ],
   "frontier": {
-    "policy": "include-frontier-level",
+    "policy": "certified-only",
     "certifiedLevels": [
-      1
+      1,
+      2,
+      3
     ],
-    "frontierLevel": 2,
-    "maxPlayableLevel": 2,
+    "frontierLevel": 4,
+    "maxPlayableLevel": 3,
     "refusedMessage": "The way on is sealed in this preview.",
     "refusedImportMessage": "That save is past this preview (max level {max}).",
     "frontierLevelNotice": "Level {level} is still being certified."
   },
   "identity": {
-    "masterHtmlSha256": "0f5a668064d4f39adefc3fdeec6ff7f7e627774cb9128aa040f8097147571403",
-    "indexHtmlSha256": "0db4903cd061fabc3c3050ceeadf0600c38d767b3a4e63d747f99f16413538d0",
+    "masterHtmlSha256": "b35702240df30fbcc78ac53912c8a2f39f129cfa48d4f11893994feffcd3794b",
+    "indexHtmlSha256": "9f0a35d9bd9f8da25d21850c7295d46e75e005cf1f54a3e0370a6517a9c18688",
     "transform": "legacy-anchored-v1"
   },
   "verification": {
-    "fullRegression": "413 tests: 382 pass, 0 fail, 31 skipped",
+    "fullRegression": "624 tests: 499 pass, 0 fail, 125 skipped",
     "mountedStartup": "28/28 PASS",
     "publicSmoke": "PASS",
     "cleanAudit": {
@@ -38,12 +40,38 @@
         "accepted": 5,
         "debt": 0
       }
+    },
+    "provenanceAudit": {
+      "status": "PASS",
+      "claimReady": true,
+      "auditor": "provenance-audit-v2",
+      "registerRevision": "Dev95SF-Candidate201",
+      "registerSha256": "01bea84f86efc3f98c2c78ca99f0abf5f0ad004fd20ca8ab426eedeb598b5607",
+      "open": {
+        "executableFingerprint": 0,
+        "moderateFingerprint": 0,
+        "addressLiteral": 0,
+        "authoredMapping": 0
+      },
+      "unregistered": {
+        "executableFingerprint": 0,
+        "moderateFingerprint": 0,
+        "addressLiteral": 0
+      },
+      "reappeared": {
+        "executableFingerprint": 0,
+        "moderateFingerprint": 0,
+        "addressLiteral": 0
+      },
+      "thirdPartyExpression": 0,
+      "authoredMonsterSchema": 0
     }
   },
   "packager": {
-    "revision": "dcf-public-repo-packager-v1",
-    "sha256": "0024f867daf9341b8bc81bd33386e781134f7c787ec1117d201cb06139bf1ac6",
-    "templateDigest": "5093958cc51aefa35ac473aabf076a552de9a2a974e0a5b249cd459d02148a52"
+    "revision": "dcf-public-repo-packager-v2",
+    "sha256": "d20c6c46a8513331ce809e58e6840b7e5b35af437e7b529e747fb090e7196061",
+    "baseSha256": "0024f867daf9341b8bc81bd33386e781134f7c787ec1117d201cb06139bf1ac6",
+    "templateDigest": "f535a350602954ae04455d122280d530ba8425229bb00a916776037b3d19ef4e"
   },
   "gameDataIncluded": false
 }
