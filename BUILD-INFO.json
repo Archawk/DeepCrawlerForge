@@ -71,7 +71,7 @@
     "revision": "dcf-public-repo-packager-v2",
     "sha256": "d20c6c46a8513331ce809e58e6840b7e5b35af437e7b529e747fb090e7196061",
     "baseSha256": "0024f867daf9341b8bc81bd33386e781134f7c787ec1117d201cb06139bf1ac6",
-    "templateDigest": "f535a350602954ae04455d122280d530ba8425229bb00a916776037b3d19ef4e"
+    "templateDigest": "c391066628e23ebff3f7c645abd55eeea81d2efb8de66fb1d452ae4e23e2aed3"
   },
   "gameDataIncluded": false
 }

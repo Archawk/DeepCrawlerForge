@@ -11,7 +11,7 @@ body:
     attributes:
       label: Build
       description: "`release` and `buildId` from BUILD-INFO.json (also shown in the page's <meta name=dcf-build>)."
-      placeholder: "Dev95RP-Candidate185 / H10-B2R79-Dev95RP-Candidate185"
+      placeholder: "Dev95SH-Candidate205 / H10-B2R79-Dev95SH-Candidate205"
     validations:
       required: true
   - type: dropdown
