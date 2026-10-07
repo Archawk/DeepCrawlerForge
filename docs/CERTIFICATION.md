@@ -8,12 +8,12 @@ Certification covers more than "it looks right". It includes state transitions s
 
 ## Levels, the frontier and this release
 
-| | Dev95SH-Candidate205 |
+| | Dev95SK-Candidate208 |
 |---|---|
-| Fully certified levels | 1, 2, 3 |
-| Certification frontier | Level 4 |
-| Frontier policy for this build | levels 1, 2, 3 (fully certified only) |
-| Highest playable level | 3 |
+| Fully certified levels | 1, 2, 3, 4, 5, 6 |
+| Certification frontier | Level 7 |
+| Frontier policy for this build | levels 1, 2, 3, 4, 5, 6 (fully certified only) |
+| Highest playable level | 6 |
 
 The **certification frontier** is where automated certification currently stands, at the first interaction that has not yet been validated against the original.
 
@@ -28,9 +28,9 @@ This limit is a courtesy boundary that keeps the public preview honest. It is no
 
 | Check | Result |
 |---|---|
-| Engine regression suite | 624 tests: 499 pass, 0 fail, 125 skipped |
+| Engine regression suite | 731 tests: 537 pass, 0 fail, 194 skipped |
 | Mounted start-up self-test | 28/28 PASS |
-| Intro / DOS presentation parity | intro, menus, setup and character creation match DOS; combat rules, turn undead, the presentation hold, the stairs manual check and the level maintenance schedule match the original; the certified campaign runs from the start to the Level 4 arrival |
+| Intro / DOS presentation parity | intro, menus, setup and character creation match DOS; combat rules, turn undead, the presentation hold, the stairs manual check, the level maintenance schedule, the encounters, magic projectiles and monster spells match the original; the certified campaign runs to the Level 7 arrival |
 | Public-build smoke test (headless browser) | see `BUILD-INFO.json` → `verification.publicSmoke` |
 | Clean audit (no game data in the repo) | see `BUILD-INFO.json` → `verification.cleanAudit` |
 

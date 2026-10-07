@@ -1,10 +1,10 @@
 {
   "schema": "dcf-public-build-info-v1",
   "status": "RELEASE",
-  "release": "Dev95SH-Candidate205",
-  "version": "0.205.0",
-  "releaseDate": "2026-10-04",
-  "buildId": "H10-B2R79-Dev95SH-Candidate205",
+  "release": "Dev95SK-Candidate208",
+  "version": "0.208.0",
+  "releaseDate": "2026-10-07",
+  "buildId": "H10-B2R79-Dev95SK-Candidate208",
   "edition": "public",
   "profiles": [
     "authentic",
@@ -15,21 +15,24 @@
     "certifiedLevels": [
       1,
       2,
-      3
+      3,
+      4,
+      5,
+      6
     ],
-    "frontierLevel": 4,
-    "maxPlayableLevel": 3,
+    "frontierLevel": 7,
+    "maxPlayableLevel": 6,
     "refusedMessage": "The way on is sealed in this preview.",
     "refusedImportMessage": "That save is past this preview (max level {max}).",
     "frontierLevelNotice": "Level {level} is still being certified."
   },
   "identity": {
-    "masterHtmlSha256": "b35702240df30fbcc78ac53912c8a2f39f129cfa48d4f11893994feffcd3794b",
-    "indexHtmlSha256": "9f0a35d9bd9f8da25d21850c7295d46e75e005cf1f54a3e0370a6517a9c18688",
+    "masterHtmlSha256": "74d2757ef6a7d9997810c8bb5e6a17505f07e65002324f6bd19f76453cae77ee",
+    "indexHtmlSha256": "34367f2c8c34c92b293531e3a352ee528343e11cbd53aae12b8c2c201ccc69f7",
     "transform": "legacy-anchored-v1"
   },
   "verification": {
-    "fullRegression": "624 tests: 499 pass, 0 fail, 125 skipped",
+    "fullRegression": "731 tests: 537 pass, 0 fail, 194 skipped",
     "mountedStartup": "28/28 PASS",
     "publicSmoke": "PASS",
     "cleanAudit": {
@@ -37,7 +40,7 @@
       "prohibitedPayloads": 0,
       "exactHashCollisions": 0,
       "verbatimSourceText": {
-        "accepted": 5,
+        "accepted": 6,
         "debt": 0
       }
     },
@@ -68,10 +71,17 @@
     }
   },
   "packager": {
-    "revision": "dcf-public-repo-packager-v2",
-    "sha256": "d20c6c46a8513331ce809e58e6840b7e5b35af437e7b529e747fb090e7196061",
+    "revision": "dcf-public-repo-packager-v3",
+    "sha256": "9affa6873c025125e5b4578c02932a7b91bec109f76ebd62712b5e58371f236e",
     "baseSha256": "0024f867daf9341b8bc81bd33386e781134f7c787ec1117d201cb06139bf1ac6",
-    "templateDigest": "c391066628e23ebff3f7c645abd55eeea81d2efb8de66fb1d452ae4e23e2aed3"
+    "templateDigest": "4146966081ba59c804ce27fea9ff25ea81873fc63f0e879b3848fa925b14764b"
+  },
+  "publicStrip": {
+    "category": "dos-tools",
+    "removedStatements": 256,
+    "removedChars": 210538,
+    "removedNames": 220,
+    "planSha256": "7ef350893561f6882e5d1e35bfb34d7bd15ea62abc76ebf8ec75826bd0a1639f"
   },
   "gameDataIncluded": false
 }

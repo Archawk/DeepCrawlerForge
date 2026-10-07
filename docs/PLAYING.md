@@ -44,9 +44,18 @@ Options that build on the original design, such as encounters that remember what
 
 Live mode in Enhanced is the same turn system as turn-based mode, with turns advanced automatically every 250 ms. Switching between the two never changes the outcome of the same inputs.
 
-## Fullscreen
+## Screen shape, scaling and fullscreen
 
-Use the ⛶ button in the game bar. The game scales to fit the screen, keeps the 8:5 aspect ratio, and draws pixels sharply.
+The original game drew a 320x200 picture that a 4:3 monitor stretched to fill the screen, so its pixels were a little taller than wide. The game bar has two choices:
+
+| Choice | What it does |
+|---|---|
+| Original monitor (4:3) / Square pixels | 4:3 (the default) shows the picture as 320x240, as the original monitor did; square pixels keep 320x200 (8:5). |
+| Sharp / Pixelated | Sharp (the default) averages each screen pixel over the part of the picture it covers, so every pixel stays crisp and even at any size, and at a whole multiple (twice, three times) every pixel is exact (a WebGL filter in the style of Pixel AA, shown pixel for pixel at any display scaling; without WebGL the browser smooths a three-times enlarged picture). Pixelated copies the nearest picture pixel, which leaves uneven rows at most sizes. |
+
+In the window the picture is 640 pixels wide, exactly twice the original's width. The choices are remembered in your browser and change only how the picture is shown: clicks land where they did, and nothing about the game changes.
+
+Use the ⛶ button in the game bar for fullscreen. The game scales to fit the screen in the chosen shape.
 
 ## Saving
 

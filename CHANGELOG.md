@@ -7,6 +7,38 @@ Public releases of DeepCrawlerForge. Each entry is written for players. The deve
 <!-- Release sessions: add the new entry at the top. The heading MUST contain the development
      release id (e.g. Dev95RG-Candidate176); the packager refuses a final build otherwise. -->
 
+## 0.208.0 — Dev95SK-Candidate208 (preview)
+- A sharper picture. The game now fills its whole frame: the thin frame line no longer takes two pixels from it. In the window the picture is 640 pixels wide, exactly twice the original, so every pixel is exact, and *Pixelated* no longer has uneven columns.
+- The *Sharp* scaler is shown pixel for pixel at any display scaling (125 %, 150 %, 200 %), also in fullscreen. At 150 % the browser used to soften the fullscreen picture once more.
+- The page no longer carries the developer's DOS comparison tools: about 200 KB of validator, trace and audit code that only the development workspace uses. The game plays exactly as before: the certified recording replays to the same results, and the stripped page and the full development page stay identical step for step.
+- The game itself is unchanged: it still plays through Level 6. (Thanks for the question.)
+
+## 0.207.0 — Dev95SJ-Candidate207 (preview)
+- The preview now plays through Level 6, the last level of the dwarven ruins. The certified campaign continues from the Level 6 arrival to the Level 7 arrival (turn 12521).
+- Spells you cast at monsters hit or miss as the original rolls them, and they fly on the same timer as arrows and thrown items.
+- Monsters use their spells as the original lets them: also right in front of the party, and only when they face the party within range with a clear line.
+- A monster's ice storm strikes each party member as in the original, and its neighbouring blocks too.
+- Darts and other items from traps start where the original puts them.
+- Stoneskin works as in the original: it stops monsters' blows only, and Dispel Magic leaves it on. These rules change what earlier recordings compute, so this release's certified timeline starts at the Level 6 arrival. The history before it is certified on 0.206.0.
+- Enhanced:
+  - *Balanced Stoneskin* (Extended content, off by default) makes Stoneskin wear off after a while, blocks recasting while it lasts, ends it when you rest and lets Dispel Magic remove it.
+  - *Area spell saves count* (Bug fixes, on by default): in the original every member takes half damage from an area spell, whatever the saving throw. With the fix, a member who fails the save takes all of it.
+- The campaign runner finds Level 6's way down by itself: shelf walls, a key in a niche, three keyholes in turn. It rests and recovers before walking on, and it no longer walks into its own spells.
+- The single simulation clock is unchanged.
+
+## 0.206.0 — Dev95SI-Candidate206 (preview)
+- The preview now plays through Level 5, the first two levels of the dwarven ruins. The certified timeline runs from Level 1, turn 0, to the Level 6 arrival (turn 10369) and replays exactly from its start.
+- The game is shown as it was on the original monitor: the 320x200 picture is stretched to 4:3 (320x240), and a sharp scaler keeps every pixel crisp at any window size. The game bar has two choices: *Original monitor (4:3)* or *Square pixels*, and *Sharp* or *Pixelated*. Clicks land where they did. (Thanks for the feedback.)
+- The Inventory page and the party panels are drawn as the original draws them: the arrow count in the quiver sits where the original prints it (it was a little high), the name, the condition line, the hit point and food bars and their colours, the panels' hand boxes and frames. Members five and six now have their panels, the colours follow the level's palette, and companions show their own faces.
+- The encounters of the dwarven ruins play as in the original, checked step by step against DOS: the companions who join (and the slot they take, with their own class, levels and experience), the dwarven cleric's healing and resurrection, the dwarves' camp. When the party is full, the join text comes first and the companion takes the place of the member you choose.
+- Monsters on a level you return to move as the original moves them; a fall through a pit keeps the direction you face; resting is silent, as in the original.
+- The sounds and the screen of a teleporter step match the original in every frame; a keyhole's sounds match too.
+- The campaign runner answers encounters, does each level's special quest (and walks back to an open one), keeps out of closed traps, rests and recovers when hurt, keeps a poisoned member alive with spells and potions until a cure, opens locked ways with keys, levers and plates, leaves neutral monsters alone and finishes forced doors.
+- Enhanced: a companion who replaces a party member picks up the member's items (Quality of life, on by default); the dwarven cleric's heal cures the whole party (Extended content, on by default).
+- Saved timelines are much smaller (the long certified timeline went from 99 MB to under 10 MB); older timelines still load.
+- The answer to the manual's question is stored as a token, so no word of the manual is in a timeline. The development tools no longer carry addresses of the original program.
+- The single simulation clock is unchanged.
+
 ## 0.205.0 — Dev95SH-Candidate205 (preview)
 - Fights follow the original's rules more closely:
   - arrows, thrown items and spells hit or miss as the original rolls them;
