@@ -24,4 +24,4 @@ This public build was verified against the following original DOS file set. Only
 
 ZIP used for verification: SHA-256 `630f2b55400a308f03bbaa3bd6333f90c455d425f7d940b37ae0ad0dcf5101bd`. Your own ZIP does not need to be byte-identical; only the files inside matter.
 
-The clean audit also checked 1 further archive(s) of the same game (SHA-256 `d959df7853a29b0ddad4a810946254b5a47b62b5ec3e9b2e8635b27634e0aead`).
+The clean audit also checked 2 further archive(s) of the same game (SHA-256 `d959df7853a29b0ddad4a810946254b5a47b62b5ec3e9b2e8635b27634e0aead`, `87715f611be97144a47188d7429862fb8b6b6e502a85d32dab57240bdec2f098`).

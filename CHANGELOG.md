@@ -7,6 +7,57 @@ Public releases of DeepCrawlerForge. Each entry is written for players. The deve
 <!-- Release sessions: add the new entry at the top. The heading MUST contain the development
      release id (e.g. Dev95RG-Candidate176); the packager refuses a final build otherwise. -->
 
+## 0.213.0 — Dev95SP-Candidate213 (preview)
+**Since 0.208.0** (the last published release; 0.209.0 to 0.212.0 were not published, and their entries below give the details):
+- **Levels 7, 8 and 9 are open.** The drow levels and the level below them are certified against the original and playable: it now plays through Level 9.
+- **The encounters show who you meet**, drawn as the original draws them from your game files, with the dialogue in the original's text area.
+- **More of the original's rules:** a monster can save for half against a Fireball; a missile that lands on the party rolls its damage before it picks its target; a dead member is no longer poisoned; the level's monster placements, monster moves and the ambient sounds keep the original's order and timing; the squares that steal an item take the one the original takes; a trap's magic missile flies out of the wall it starts in.
+- **New Enhanced options:** *Thieves search every slot* (the original's own slip is kept in Authentic play) and three companion options (sex as the story names it, abilities in their places, class from the bones).
+- **Loading and saving:** a game folder zipped with its setup program first loads; saving to the original's format works with restored items in the pack.
+- **Horizon (the autoplayer)** keeps track of the game's quests: it brings what an encounter asks for back in one trip, takes the quest companion along, gathers and places the items a special quest asks for, and finds its way through levels split into parts and past doors only a key opens.
+- Recordings made with earlier versions keep the behaviour they were recorded with, so they still replay exactly. The single simulation clock is unchanged.
+
+**In this release:**
+- Level 9 is open: the certified campaign has played it through to the way down to Level 10.
+- Horizon finds the way off a level whose stairs lie behind doors no switch opens: it walks back across the level to the keyhole the way needs, keeps the key in hand until it has used it, and then takes the way down.
+- Horizon waits for its own missile to pass before it steps into its path, and lets a hurt party rest before walking on to a quest.
+
+## 0.212.0 — Dev95SO-Candidate212 (preview)
+- When a level places a new monster, it now does so at the moment the party's step makes it due, after the monsters that moved by then, as in the original. The new monster's hit points are rolled where the original rolls them.
+- A magic missile that a trap fires from inside a wall now flies out along the corridor until it meets a wall, as in the original. It used to strike the wall it started in.
+- Horizon (the autoplayer) keeps one list of the game's quests: what an encounter asks for, whom it wants to see again, and each level's special quest. It takes a quest companion along (when the party is full, the weakest companion no quest needs leaves; the characters you created stay), brings what is asked for back in one trip, and stops to have a fallen member raised on the way.
+- Horizon gathers the items a special quest asks for and drops or places them, and knows when a level is split into parts joined only by stairs or a teleporter.
+- Horizon no longer picks up an item behind the party without turning to it first, no longer uses a door switch that would change nothing, and no longer orders a group attack that would fire a launcher.
+- It still plays through Level 8. Games started with this version follow the new rules; recordings made before keep the behaviour they were recorded with, so they still replay exactly. The single simulation clock is unchanged.
+
+## 0.211.0 — Dev95SN-Candidate211 (preview)
+- Levels 7 and 8 are open: the drow levels are certified against the original and playable. It now plays through Level 8.
+- A monster struck by a Fireball (or another spell that allows it) can save for half damage, as in the original.
+- A spear or other missile that lands on the party rolls its damage before it picks the member it hits, as in the original.
+- The ambient sounds keep their timing when the party takes the stairs.
+- When a level places a new monster, it does so after the monsters have moved that tick, and monsters move in the original's order. A monster that steps onto the spot first now blocks the new one, as in the original.
+- The squares that steal a small item from the party now take the item the original takes and put it where the original puts it (in a wall niche, not on the floor). The original's own slip is kept: one roll out of 27 starts past the last slot and never searches it. New Enhanced option *Thieves search every slot* (Bug fixes) fixes that.
+- Horizon can carry an item back to the encounter that asked for it, and does the special quests of the levels on the way.
+- Games started with this version follow the new rules; recordings made before keep the behaviour they were recorded with, so they still replay exactly. The single simulation clock is unchanged.
+
+## 0.210.0 — Dev95SM-Candidate210 (preview)
+- A game folder zipped with its setup program first now loads. The game's main program is found by what it is, not by its file name or its place in the ZIP.
+- The start screen no longer names one game: "Load your original game data (a ZIP of the game folder)" and "Drop your game ZIP here".
+- Saving to the original's save format no longer fails when the party carries a restored scroll or the quest prize of the restored ending. The original game has no record for those items, so the save leaves them out; they stay in your DeepCrawlerForge game.
+- A restored item that lies on top of other items can be picked up. It could not.
+- It still plays through Level 6. The single simulation clock is unchanged, and the certified recording replays to the same results.
+
+## 0.209.0 — Dev95SL-Candidate209 (preview)
+- The encounters show who you meet. The injured dwarf, the dwarven cleric (with a companion raised from bones beside him) and the camp's greeter are drawn as the original draws them, read from your game files. The dialogue sits in the original's text area, and nothing (the timeline controls, the effect timers, the spell boxes) is drawn over it.
+- A party member who dies no longer stays poisoned. In the original, death clears poison and paralysis, so there is no poison question at every rest and no poison message while the party sleeps. Games started with this version follow that rule; recordings made before keep the behaviour they were recorded with, so they still replay exactly.
+- New Enhanced options for the companions. The original's own records stay the default in Authentic play.
+  - *Companion sex as the story text names it* (Bug fixes, on by default): a companion takes the sex its own story gives it.
+  - *Companion abilities in their places* (Bug fixes, on by default): a companion whose main ability is its lowest score has it exchanged into place, when the game's own rules allow the result.
+  - *Companion class from the bones* (Restored content, on by default): a companion whose bones lie with an item of one class joins as that class, when it meets that class's requirements.
+- A companion who replaces a party member picks up the dropped items without the long pause.
+- A joined companion keeps its race in a save.
+- It still plays through Level 6. The single simulation clock is unchanged.
+
 ## 0.208.0 — Dev95SK-Candidate208 (preview)
 - A sharper picture. The game now fills its whole frame: the thin frame line no longer takes two pixels from it. In the window the picture is 640 pixels wide, exactly twice the original, so every pixel is exact, and *Pixelated* no longer has uneven columns.
 - The *Sharp* scaler is shown pixel for pixel at any display scaling (125 %, 150 %, 200 %), also in fullscreen. At 150 % the browser used to soften the fullscreen picture once more.

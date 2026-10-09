@@ -1,10 +1,10 @@
 {
   "schema": "dcf-public-build-info-v1",
   "status": "RELEASE",
-  "release": "Dev95SK-Candidate208",
-  "version": "0.208.0",
-  "releaseDate": "2026-10-07",
-  "buildId": "H10-B2R79-Dev95SK-Candidate208",
+  "release": "Dev95SP-Candidate213",
+  "version": "0.213.0",
+  "releaseDate": "2026-10-09",
+  "buildId": "H10-B2R79-Dev95SP-Candidate213",
   "edition": "public",
   "profiles": [
     "authentic",
@@ -18,21 +18,24 @@
       3,
       4,
       5,
-      6
+      6,
+      7,
+      8,
+      9
     ],
-    "frontierLevel": 7,
-    "maxPlayableLevel": 6,
+    "frontierLevel": 10,
+    "maxPlayableLevel": 9,
     "refusedMessage": "The way on is sealed in this preview.",
     "refusedImportMessage": "That save is past this preview (max level {max}).",
     "frontierLevelNotice": "Level {level} is still being certified."
   },
   "identity": {
-    "masterHtmlSha256": "74d2757ef6a7d9997810c8bb5e6a17505f07e65002324f6bd19f76453cae77ee",
-    "indexHtmlSha256": "34367f2c8c34c92b293531e3a352ee528343e11cbd53aae12b8c2c201ccc69f7",
+    "masterHtmlSha256": "85520e4880541dc7b6bb3933a2b8db1c172a95897d0053de9f19fef6aab7759c",
+    "indexHtmlSha256": "1a33fa2003517a7b9757b661fdc5790cdf9c29c8051ae85471d18d42559daee2",
     "transform": "legacy-anchored-v1"
   },
   "verification": {
-    "fullRegression": "731 tests: 537 pass, 0 fail, 194 skipped",
+    "fullRegression": "845 tests: 586 pass, 0 fail, 259 skipped",
     "mountedStartup": "28/28 PASS",
     "publicSmoke": "PASS",
     "cleanAudit": {
@@ -40,7 +43,7 @@
       "prohibitedPayloads": 0,
       "exactHashCollisions": 0,
       "verbatimSourceText": {
-        "accepted": 6,
+        "accepted": 12,
         "debt": 0
       }
     },
@@ -74,14 +77,14 @@
     "revision": "dcf-public-repo-packager-v3",
     "sha256": "9affa6873c025125e5b4578c02932a7b91bec109f76ebd62712b5e58371f236e",
     "baseSha256": "0024f867daf9341b8bc81bd33386e781134f7c787ec1117d201cb06139bf1ac6",
-    "templateDigest": "4146966081ba59c804ce27fea9ff25ea81873fc63f0e879b3848fa925b14764b"
+    "templateDigest": "74ed05ed5aaa5042276eecf715610e6e9d83bdf8951faf123d62ede1f74c9127"
   },
   "publicStrip": {
-    "category": "dos-tools",
-    "removedStatements": 256,
-    "removedChars": 210538,
+    "category": "dos-tools+eob2",
+    "removedStatements": 265,
+    "removedChars": 335823,
     "removedNames": 220,
-    "planSha256": "7ef350893561f6882e5d1e35bfb34d7bd15ea62abc76ebf8ec75826bd0a1639f"
+    "planSha256": "943a445dbf4368b48c7a386f860a0bc6228795d248d519924ade525c5835d810"
   },
   "gameDataIncluded": false
 }

@@ -6,7 +6,7 @@ DeepCrawlerForge is a single HTML file. Open it in a modern browser, give it a Z
 
 It includes **no game data**. Graphics, text, levels, fonts, sound and even the screen layout are read from your files, in your browser, every time the game starts. Nothing is uploaded.
 
-> **Public preview 0.208.0** (`Dev95SK-Candidate208`, released 2026-10-07). You can play levels 1, 2, 3, 4, 5, 6 (fully certified only). The game stops you before any level that has not been checked yet. See [Certification status](#certification-status).
+> **Public preview 0.213.0** (`Dev95SP-Candidate213`, released 2026-10-09). You can play levels 1, 2, 3, 4, 5, 6, 7, 8, 9 (fully certified only). The game stops you before any level that has not been checked yet. See [Certification status](#certification-status).
 
 ---
 
@@ -45,12 +45,12 @@ DeepCrawlerForge is developed against the original game. During development, the
 
 | | This release |
 |---|---|
-| Fully certified levels | 1, 2, 3, 4, 5, 6 |
-| Certification frontier | Level 7 (in progress) |
-| Playable in this public build | up to level 6 |
-| Engine regression suite | 731 tests: 537 pass, 0 fail, 194 skipped |
+| Fully certified levels | 1, 2, 3, 4, 5, 6, 7, 8, 9 |
+| Certification frontier | Level 10 (in progress) |
+| Playable in this public build | up to level 9 |
+| Engine regression suite | 845 tests: 586 pass, 0 fail, 259 skipped |
 | Mounted start-up self-test | 28/28 PASS |
-| Intro / DOS presentation parity | intro, menus, setup and character creation match DOS; combat rules, turn undead, the presentation hold, the stairs manual check, the level maintenance schedule, the encounters, magic projectiles and monster spells match the original; the certified campaign runs to the Level 7 arrival |
+| Intro / DOS presentation parity | intro, menus, setup and character creation match DOS; combat rules, turn undead, the presentation hold, the stairs manual check, the level maintenance schedule, the encounters and their pictures, a member's death, magic projectiles and monster spells match the original; the certified campaign runs through Level 9 to the Level 10 arrival |
 
 The playable range grows with each public release. [docs/CERTIFICATION.md](docs/CERTIFICATION.md) explains what "certified" means and how the frontier works.
 
